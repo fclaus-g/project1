@@ -1,0 +1,102 @@
+body {
+	color: #000000;
+	font-family: 'Roboto', 'Ubuntu', sans-serif;
+}
+
+header {
+	background-color: #ffffff;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	display: flex;
+	width: 100%;
+	flex-wrap: nowrap;/*esto hace que los elementos no se desplacen a la siguiente línea*/
+	flex-direction: row;
+	justify-content: space-between;/*espacio entre los elementos*/
+	align-items: center;/*centra los elementos*/
+	text-align: left;
+	font-size: 1rem;
+	gap: 10px;/*espacio entre los elementos*/
+}
+
+#search-input {
+	border-radius: 6px;
+}
+
+header button {
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	padding: 5px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1rem;
+	margin: 5px;
+	box-shadow: #000000 1px 1px 1px;
+}
+
+header button:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+main {
+	width: 100%;
+}
+
+.line {
+	background-color: #000000;
+	height: 1px;
+	width: 80%;
+	margin: 20px auto;
+	border-radius: 50%;
+}
+
+#gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));/*esto hace que las columnas se ajusten al tamaño de la pantalla*/
+	grid-gap: 20px;/*espacio entre las columnas*/
+	width: 100%;
+}
+
+
+#gallery > div {
+   
+    box-sizing: border-box;
+    position: relative;
+	
+}
+
+#gallery img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+#gallery button {
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid #000000;
+	padding: 5px 5px;
+	border-radius: 10%;
+	cursor: pointer;
+	font-size: 1rem;
+	margin: 5px;
+	position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+footer {
+	background-color: #ffffff;
+	color: #000000;
+	text-align: center;
+	padding: 10px;
+	bottom: 0;
+	width: 100%;
+	margin-top: 0;
+}
+
+
+   
